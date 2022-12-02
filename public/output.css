@@ -717,6 +717,10 @@ video {
   height: 1.25rem;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .w-full {
   width: 100%;
 }
@@ -1750,6 +1754,10 @@ video {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:h-full {
+    height: 100%;
   }
 
   .md\:w-4\/6 {

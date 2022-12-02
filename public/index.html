@@ -10,7 +10,7 @@
   <body>
     <div class="relative inset-0 h-full">
       <img
-        class="absolute object-cover opacity-80 w-full h-full"
+        class="absolute object-cover opacity-80 -z-10 w-full h-full"
         src="images/background-img.png"
       />
       <header>
@@ -34,6 +34,7 @@
 
               <button
                 type="button"
+                id="menu-btn"
                 class="inline-flex p-2 text-adopt transition-all duration-200 rounded-2xl lg:hidden focus:text-adopt-dark hover:text-adopt-dark"
               >
                 <svg
@@ -92,43 +93,23 @@
 
         <!-- xs to lg -->
         <nav
-          class="flex flex-col justify-between w-full min-h-50 px-4 py-10 bg-adopt sm:px-6 md:hidden lg:hidden xl:hidden"
+          id="phone-menu"
+          class="hidden flex-col justify-between w-full min-h-50 px-10 py-10 bg-adopt sm:px-6 md:hidden lg:hidden xl:hidden"
         >
-          <button
-            type="button"
-            id="exit-nav-btn"
-            class="inline-flex p-2 text-white transition-all duration-200 rounded-md focus:text-adopt-dark hover:text-adopt-dark"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-6 h-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </button>
-
-          <div class="flex flex-col flex-grow h-full">
-            <nav class="flex flex-col flex-1 mt-10 space-y-2">
+          <div class="flex flex-col flex-grow h-full items-center">
+            <nav class="flex flex-col flex-1 space-y-2 items-center">
               <a
                 href="index.html#our-initiatives"
                 title="Our Initiatives"
-                class="flex w-full py-2 font-medium text-white transition-all duration-200 hover:text-adopt-dark focus:text-adopt-dark"
+                class="flex py-2 font-medium text-white transition-all duration-200 hover:text-blue-100 focus:text-blue-100"
               >
                 Our Initiatives
               </a>
 
               <a
                 href="sponsors.html"
-                title=""
-                class="flex w-full py-2 font-medium text-white transition-all duration-200 hover:text-adopt-dark focus:text-adopt-dark"
+                title="See the companies and organisations that sponsor us and learn how you can become a sponsor"
+                class="flex py-2 font-medium text-white transition-all duration-200 hover:text-blue-100 focus:text-blue-100"
               >
                 Sponsors
               </a>
@@ -136,13 +117,13 @@
               <a
                 href="contact.html"
                 title=""
-                class="flex w-full py-2 font-medium text-white transition-all duration-200 hover:text-adopt-dark focus:text-adopt-dark"
+                class="flex py-2 font-medium text-white transition-all duration-200 hover:text-blue-100 focus:text-blue-100"
               >
                 Contact Us
               </a>
             </nav>
 
-            <div class="flex flex-col items-start mt-6">
+            <div class="flex flex-col mt-6">
               <a
                 href="donate.html"
                 title=""
@@ -177,15 +158,15 @@
                 <a
                   href="adopt-a-beach.html"
                   title=""
-                  class="inline-flex items-center justify-center px-8 py-2.5 text-base font-medium text-white uppercase transition-all duration-200 bg-adopt border border-transparent rounded-2xl shadow-sm hover:bg-adopt-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-adoptbg-adopt-dark"
+                  class="inline-flex items-center justify-center px-8 py-2.5 text-base font-medium text-white uppercase transition-all duration-200 bg-adopt border border-transparent rounded-2xl shadow-sm hover:bg-adopt-dark focus:outline-none"
                   role="button"
                 >
                   Adopt a beach
                 </a>
                 <a
-                  href=""
+                  href="adopt-a-trolley.htm"
                   title=""
-                  class="inline-flex items-center justify-center px-8 py-2 text-base font-semibold text-adopt uppercase transition-all duration-200 bg-transparent ring-adopt ring-2 rounded-2xl shadow-sm hover:shadow-md hover:ring-adopt-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-adopt-dark"
+                  class="inline-flex items-center justify-center px-8 py-2.5 text-base font-medium text-white uppercase transition-all duration-200 bg-adopt-dark border border-transparent rounded-2xl shadow-sm hover:bg-adopt-light focus:outline-none focus:bg-adopt-light"
                   role="button"
                 >
                   Adopt a trolley
@@ -629,4 +610,5 @@
       </div>
     </section>
   </body>
+  <script src="script.js"></script>
 </html>

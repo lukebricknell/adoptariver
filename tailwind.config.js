@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/index.html", "./src/*.{html,js, tsx}"],
+  content: ["./public/index.html", "./public/**/*.{html,js}"],
   theme: {
     extend: {
       colors: {
@@ -11,7 +11,16 @@ module.exports = {
         },
         transparent: "transparent",
       },
+      borderWidth: {
+        1: "1px",
+      },
+      backgroundImage: {
+        tufbag:
+          "url('../public/images/tufbag.png'), linear-gradient(to left, rgb(0,0,0,0.2), rgb(0,0,0,0.2))",
+        "black-hover":
+          "linear-gradient(to left, rgb(0,0,0,0.2), rgb(0,0,0,0.2))",
+      },
     },
+    plugins: [],
   },
-  plugins: [],
 };

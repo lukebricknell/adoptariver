@@ -16,9 +16,7 @@ module.exports = {
       },
       backgroundImage: {
         tufbag:
-          "url('../public/images/tufbag.png'), linear-gradient(to left, rgb(0,0,0,0.2), rgb(0,0,0,0.2))",
-        "black-hover":
-          "linear-gradient(to left, rgb(0,0,0,0.2), rgb(0,0,0,0.2))",
+          "linear-gradient(to right bottom, rgba(0,0,0, 0.3), rgba(0,0,0, 0.3)), url('/public/images/tufbag.png')",
       },
     },
     plugins: [],

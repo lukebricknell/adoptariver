@@ -233,7 +233,7 @@
 
     <!-- DONATE SECTION -->
 
-    <section>
+    <section id="donate-section" class="">
       <div
         class="mx-auto max-w-5xl px-6 md:px-8 lg:px-10 pt-12 md:pt-20 lg:pt-22"
       >
@@ -249,8 +249,9 @@
             donate!
           </p>
         </div>
-        <div class="grid sm:grid-cols-3 gap-12 px-6 py-20">
+        <div class="grid sm:grid-cols-3 gap-12 px-6 pt-20 py-10">
           <button
+            id="credit-card-btn"
             class="w-full h-full px-4 py-8 bg-adopt rounded-lg transition-all duration-200 hover:-translate-y-1 hover:shadow-xl focus:-translate-y-1 focus:shadow-xl"
           >
             <img src="images/credit-card.svg" class="h-32 w-auto mx-auto" />
@@ -260,16 +261,23 @@
               Credit Card
             </h3>
           </button>
-          <button
-            class="w-full h-full px-4 py-8 bg-adopt rounded-lg transition-all duration-200 hover:-translate-y-1 hover:shadow-xl focus:-translate-y-1 focus:shadow-xl"
+          <a
+            class="block"
+            href="https://www.paypal.com/donate/?hosted_button_id=K54YSMX5K7HEQ"
           >
-            <img src="images/paypal.svg" class="h-32 w-auto mx-auto" />
-            <h3
-              class="font-bold text-2xl md:text-3xl lg:text-4xl text-center pt-4 text-white"
+            <div
+              onclick="https://www.paypal.com/donate/?hosted_button_id=K54YSMX5K7HEQ"
+              id="paypal_button"
+              class="w-full h-full px-4 py-8 bg-adopt rounded-lg transition-all duration-200 hover:-translate-y-1 hover:shadow-xl focus:-translate-y-1 focus:shadow-xl"
             >
-              Paypal
-            </h3>
-          </button>
+              <img src="images/paypal.svg" class="h-32 w-auto mx-auto" />
+              <h3
+                class="font-bold text-2xl md:text-3xl lg:text-4xl text-center pt-4 text-white"
+              >
+                Paypal
+              </h3>
+            </div>
+          </a>
           <button
             class="w-full h-full px-4 py-8 bg-adopt rounded-lg transition-all duration-200 hover:-translate-y-1 hover:shadow-xl focus:-translate-y-1 focus:shadow-xl"
           >
@@ -281,10 +289,73 @@
             </h3>
           </button>
         </div>
+
+        <!-- Form -->
+        <div id="credit-card" class="px-6">
+          <form
+            action="https://www.payfast.co.za/eng/process"
+            method="post"
+            class="bg-adopt p-5 rounded-md mb-10"
+          >
+            <input type="hidden" name="merchant_id" value="10000100" />
+            <input type="hidden" name="merchant_key" value="46f0cd694581a" />
+            <input type="hidden" name="item_name" value="Donation" />
+            <fieldset>
+              <ul class="list-none">
+                <li class="">
+                  <label
+                    class="text-left block text-white pb-1 font-semibold"
+                    for="donation_amount"
+                    >Donation Amount</label
+                  >
+                  <input
+                    class="border-adopt border-2 text-base block p-2 rounded-md w-1/2"
+                    type="number"
+                    id="donation-amount"
+                    name="amount"
+                    placeholder="R100.00"
+                  />
+                </li>
+                <li class="pt-5">
+                  <label
+                    class="text-left block text-white pb-1 font-semibold"
+                    for="name"
+                    >Name</label
+                  >
+                  <input
+                    class="border-adopt border-2 text-base block p-2 rounded-md w-full"
+                    type="text"
+                    id="name"
+                    name="name_first"
+                    placeholder="Jane Doe"
+                  />
+                </li>
+                <li class="pt-5">
+                  <label
+                    class="text-left block text-white pb-1 font-semibold"
+                    for="email"
+                    >Email</label
+                  >
+                  <input
+                    class="border-adopt border-2 text-base block p-2 rounded-md w-full"
+                    type="email"
+                    id="email"
+                    name="email_address"
+                    placeholder="janedoe@gmail.com"
+                  />
+                </li>
+                <li>
+                  <input
+                    type="submit"
+                    class="border-none text-center lg:text-left my-5 py-2 px-10 bg-white text-adopt font-bold rounded-2xl hover:bg-adopt-dark hover:text-white focus:bg-adopt-dark focus:text-white focus:shadow-xl"
+                  />
+                </li>
+              </ul>
+            </fieldset>
+          </form>
+        </div>
       </div>
     </section>
-
-    <!-- Form -->
 
     <!-- Form END -->
 
@@ -425,7 +496,7 @@
 
               <li>
                 <a
-                  href="index.html#ourinitiatives"
+                  href="index.html#our-initiatives"
                   title="Our Initiatives Link"
                   class="flex text-base text-black transition-all duration-200 hover:text-adopt-dark focus:text-adopt-dark"
                 >
@@ -539,4 +610,9 @@
     </section>
   </body>
   <script src="script.js"></script>
+  <script
+    src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js"
+    charset="UTF-8"
+  ></script>
+  <script src="https://zapper-ecommerce.s3-eu-west-1.amazonaws.com/releases/zapper.ecommerce-2.0.3.min.js"></script>
 </html>

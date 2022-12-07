@@ -261,6 +261,69 @@
               Credit Card
             </h3>
           </button>
+          <div id="credit-card" class="lg:row-start-2 lg:col-span-3">
+            <form
+              action="https://www.payfast.co.za/eng/process"
+              method="post"
+              class="bg-adopt p-5 rounded-md mb-10"
+            >
+              <input type="hidden" name="merchant_id" value="10000100" />
+              <input type="hidden" name="merchant_key" value="46f0cd694581a" />
+              <input type="hidden" name="item_name" value="Donation" />
+              <fieldset>
+                <ul class="list-none">
+                  <li class="">
+                    <label
+                      class="text-left block text-white pb-1 font-semibold"
+                      for="donation_amount"
+                      >Donation Amount</label
+                    >
+                    <input
+                      class="border-adopt border-2 text-base block p-2 rounded-md w-1/2"
+                      type="number"
+                      id="donation-amount"
+                      name="amount"
+                      placeholder="R100.00"
+                    />
+                  </li>
+                  <li class="pt-5">
+                    <label
+                      class="text-left block text-white pb-1 font-semibold"
+                      for="name"
+                      >Name</label
+                    >
+                    <input
+                      class="border-adopt border-2 text-base block p-2 rounded-md w-full"
+                      type="text"
+                      id="name"
+                      name="name_first"
+                      placeholder="Jane Doe"
+                    />
+                  </li>
+                  <li class="pt-5">
+                    <label
+                      class="text-left block text-white pb-1 font-semibold"
+                      for="email"
+                      >Email</label
+                    >
+                    <input
+                      class="border-adopt border-2 text-base block p-2 rounded-md w-full"
+                      type="email"
+                      id="email"
+                      name="email_address"
+                      placeholder="janedoe@gmail.com"
+                    />
+                  </li>
+                  <li>
+                    <input
+                      type="submit"
+                      class="border-none text-center lg:text-left my-5 py-2 px-10 bg-white text-adopt font-bold rounded-2xl hover:bg-adopt-dark hover:text-white focus:bg-adopt-dark focus:text-white focus:shadow-xl"
+                    />
+                  </li>
+                </ul>
+              </fieldset>
+            </form>
+          </div>
           <a
             class="block"
             href="https://www.paypal.com/donate/?hosted_button_id=K54YSMX5K7HEQ"
@@ -291,69 +354,6 @@
         </div>
 
         <!-- Form -->
-        <div id="credit-card" class="px-6">
-          <form
-            action="https://www.payfast.co.za/eng/process"
-            method="post"
-            class="bg-adopt p-5 rounded-md mb-10"
-          >
-            <input type="hidden" name="merchant_id" value="10000100" />
-            <input type="hidden" name="merchant_key" value="46f0cd694581a" />
-            <input type="hidden" name="item_name" value="Donation" />
-            <fieldset>
-              <ul class="list-none">
-                <li class="">
-                  <label
-                    class="text-left block text-white pb-1 font-semibold"
-                    for="donation_amount"
-                    >Donation Amount</label
-                  >
-                  <input
-                    class="border-adopt border-2 text-base block p-2 rounded-md w-1/2"
-                    type="number"
-                    id="donation-amount"
-                    name="amount"
-                    placeholder="R100.00"
-                  />
-                </li>
-                <li class="pt-5">
-                  <label
-                    class="text-left block text-white pb-1 font-semibold"
-                    for="name"
-                    >Name</label
-                  >
-                  <input
-                    class="border-adopt border-2 text-base block p-2 rounded-md w-full"
-                    type="text"
-                    id="name"
-                    name="name_first"
-                    placeholder="Jane Doe"
-                  />
-                </li>
-                <li class="pt-5">
-                  <label
-                    class="text-left block text-white pb-1 font-semibold"
-                    for="email"
-                    >Email</label
-                  >
-                  <input
-                    class="border-adopt border-2 text-base block p-2 rounded-md w-full"
-                    type="email"
-                    id="email"
-                    name="email_address"
-                    placeholder="janedoe@gmail.com"
-                  />
-                </li>
-                <li>
-                  <input
-                    type="submit"
-                    class="border-none text-center lg:text-left my-5 py-2 px-10 bg-white text-adopt font-bold rounded-2xl hover:bg-adopt-dark hover:text-white focus:bg-adopt-dark focus:text-white focus:shadow-xl"
-                  />
-                </li>
-              </ul>
-            </fieldset>
-          </form>
-        </div>
       </div>
     </section>
 

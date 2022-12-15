@@ -1,0 +1,9 @@
+ErrorDocument 404 /404.html
+
+Redirect /adopt-a-beach.html /adopt-a-beach
+Redirect /adopt-a-river.html /adopt-a-river
+Redirect /adopt-a-trolley.html /adopt-a-trolley
+Redirect /captain-fanplastic.html /captain-fanplastic
+Redirect /donate.html /donate
+Redirect /contact.html /contact
+Redirect /sponsors.html /sponsors

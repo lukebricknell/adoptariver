@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./public/index.html", "./public/**/*.{html,js}"],
+  content: [
+    "./public/index.html",
+    "./public/**/*.{html,js}",
+    "./public/script.js",
+  ],
   theme: {
     extend: {
       colors: {
@@ -16,7 +20,7 @@ module.exports = {
       },
       backgroundImage: {
         tufbag:
-          "linear-gradient(to right bottom, rgba(0,0,0, 0.3), rgba(0,0,0, 0.3)), url('/public/images/tufbag.png')",
+          "linear-gradient(to right bottom, rgba(0,0,0, 0.3), rgba(0,0,0, 0.3)), url('./public/images/tufbag.png')",
       },
     },
     plugins: [],

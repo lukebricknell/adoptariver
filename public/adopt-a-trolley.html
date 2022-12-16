@@ -410,20 +410,52 @@
               Subscribe to newsletter
             </p>
 
-            <form action="#" method="POST" class="mt-6">
+            <form
+              action="https://adoptariversa.us14.list-manage.com/subscribe/post?u=204df2d98a188a5bf46eb6866&amp;id=cac05e37b8&amp;f_id=007e98e0f0"
+              method="post"
+              id="mc-embedded-subscribe-form"
+              class="mt-6"
+              name="mc-embedded-subscribe-form"
+              class="validate"
+              target="_blank"
+              novalidate
+            >
               <div>
-                <label for="email" class="sr-only">Email</label>
+                <label for="email" class="sr-only"
+                  >Email<span class="text-red-500">*</span></label
+                >
                 <input
                   type="email"
-                  name="email"
+                  name="EMAIL"
+                  value=""
                   id="email"
                   placeholder="Enter your email"
                   class="block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-adopt-dark caret-adopt-dark"
+                  required
                 />
               </div>
-
+              <div
+                class="response"
+                id="mce-error-response"
+                style="display: none"
+              ></div>
+              <div
+                class="response"
+                id="mce-success-response"
+                style="display: none"
+              ></div>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px" aria-hidden="true">
+                <input
+                  type="text"
+                  name="b_204df2d98a188a5bf46eb6866_cac05e37b8"
+                  tabindex="-1"
+                  value=""
+                />
+              </div>
               <button
                 type="submit"
+                name="subscribe"
                 class="inline-flex items-center justify-center px-6 py-3 mt-3 font-semibold text-white transition-all duration-200 bg-adopt rounded-2xl hover:bg-adopt-dark focus:bg-adopt-dark"
               >
                 Subscribe
@@ -488,4 +520,21 @@
   </body>
   <script src="script.js"></script>
   <script src="popUp.js"></script>
+  <script
+    type="text/javascript"
+    src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+  ></script>
+  <script type="text/javascript">
+    (function ($) {
+      window.fnames = new Array();
+      window.ftypes = new Array();
+      fnames[0] = "EMAIL";
+      ftypes[0] = "email";
+      fnames[1] = "FNAME";
+      ftypes[1] = "text";
+      fnames[2] = "LNAME";
+      ftypes[2] = "text";
+    })(jQuery);
+    var $mcj = jQuery.noConflict(true);
+  </script>
 </html>

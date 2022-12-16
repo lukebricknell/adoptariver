@@ -4,15 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Join the fight to create a brighter future for our communities and environment through donating to our cause. Your joining the fight means the world to us!"
+    />
     <link href="output.css" rel="stylesheet" />
     <title>Donate | Adopt a River</title>
     <link rel="canonical" href="https://adoptariversa.org/" />
     <link rel="icon" href="images/favicon.png" sizes="32x32" />
-    <meta property="og:locale" content="en_UK" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Donate | Adopt a River" />
-    <meta property="og:url" content="https://adoptariversa.org/donate" />
-    <meta property="og:site_name" content="Adopt a River" />
   </head>
   <body>
     <header class="bg-adopt">
@@ -257,7 +256,7 @@
             Please know how grateful we are for any amount that you choose to
             donate! If you would like to donate via EFT
             <a
-              href="emailto:janet@adoptariversa.org"
+              href="emailto:janet@adoptariversa.org?subject=I would like to donate via EFT"
               class="text-adopt underline"
               >click here</a
             >.
@@ -290,8 +289,18 @@
               method="post"
               class="bg-adopt p-5 rounded-md mb-10"
             >
-              <input type="hidden" name="merchant_id" value="17666473" />
-              <input type="hidden" name="merchant_key" value="qhioe2p0spns9" />
+              <input
+                type="hidden"
+                id="merchant_id"
+                name="merchant_id"
+                value="17666473"
+              />
+              <input
+                type="hidden"
+                id="merchant_key"
+                name="merchant_key"
+                value="qhioe2p0spns9"
+              />
               <input
                 type="hidden"
                 name="return_url"
@@ -308,7 +317,7 @@
                 value="https://www.example.com/notify"
               />
               <ul class="list-none">
-                <li class="">
+                <li>
                   <label
                     class="text-left block text-white pb-1 font-semibold"
                     for="donation_amount"
@@ -351,11 +360,6 @@
                     name="email_address"
                     placeholder="janedoe@gmail.com"
                     required="required"
-                  />
-                  <input
-                    type="hidden"
-                    name="signature"
-                    value="f103e22c0418655fb03991538c51bfd5"
                   />
                 </li>
                 <li>
@@ -732,7 +736,6 @@
     </div>
   </body>
   <script src="script.js"></script>
-  <script src="forms.js"></script>
   <script src="popUp.js"></script>
   <script
     type="text/javascript"

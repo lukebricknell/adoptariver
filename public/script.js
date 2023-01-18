@@ -55,3 +55,21 @@ overlay.addEventListener("click", function () {
     zapperWindow.classList.add("hidden");
   }
 });
+
+// WATER SAMPLING
+
+const waterSampling = document.getElementById("water-sampling");
+const waterSamplingOpen = document.getElementById("open-water-sampling");
+const waterSamplingExit = document.getElementById("exit-water-sampling");
+
+waterSamplingOpen.addEventListener("click", function () {
+  if (waterSampling.classList.contains("hidden")) {
+    waterSampling.classList.remove("hidden");
+  }
+});
+
+waterSamplingExit.addEventListener("click", function () {
+  if (!waterSampling.classList.contains("hidden")) {
+    waterSampling.classList.add("hidden");
+  }
+});

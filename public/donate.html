@@ -182,7 +182,7 @@
         </div>
 
         <div
-          class="grid grid-cols-1 gap-5 mt-12 sm:grid-cols-3 lg:mt-20 lg:gap-x-12"
+          class="grid grid-cols-1 gap-5 mt-12 lg:grid-cols-3 lg:mt-20 lg:gap-x-12"
         >
           <div
             class="transition-all duration-200 bg-white rounded-lg hover:shadow-xl"
@@ -257,6 +257,100 @@
                 ways and seas. Providing you the public with credible
                 information about the quality and safety of our water.
               </p>
+              <button
+                id="open-water-sampling"
+                class="block md:inline-block mt-5 bg-adopt py-3 px-12 hover:bg-adopt-light text-left text-white rounded-2xl alig"
+              >
+                View recent results
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- WATER SAMPLING SECTION -->
+        <div
+          id="water-sampling"
+          class="relative hidden shadow-5xl bg-adopt p-8 max-w-7xl mx-auto rounded-3xl mt-10"
+        >
+          <button
+            id="exit-water-sampling"
+            class="absolute top-2 right-2 md:top-8 md:right-8"
+          >
+            <svg
+              width="90"
+              height="90"
+              viewBox="0 0 90 90"
+              fill="#4A8AC0"
+              stroke="currentColor"
+              class="w-10 h-10 text-white hover:fill-white hover:stroke-adopt focus:fill-white stroke-0 focus:stroke-adopt transition-all"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="45" cy="45" r="45" />
+              <path
+                d="M63 27L27 63M63 63L27 27"
+                stroke-width="5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <div>
+            <h3 class="text-white font-bold text-4xl pb-8">
+              Water Sampling Results
+            </h3>
+          </div>
+          <div
+            class="grid grid-cols-1 grid-rows-3 lg:grid-cols-3 lg:grid-rows-1 items-center gap-8 justify-center"
+          >
+            <div class="bg-adopt-light w-full h-auto p-5 rounded-3xl">
+              <h4 class="text-white text-xl font-bold">12/06/22</h4>
+              <h5 class="text-white text-lg pb-1 pt-4 font-bold">Location:</h5>
+              <p class="text-[#C5DEF3] font-semibold text-md pb-3">
+                Bronze Beach, Umhlanga
+              </p>
+
+              <h5 class="text-white text-lg pb-1 pt-2 font-bold">Result:</h5>
+              <p class="text-[#C5DEF3] font-semibold text-md pb-3">Poor</p>
+
+              <h5 class="text-white text-lg pb-1 pt-2 font-bold">Reason:</h5>
+              <p class="text-[#C5DEF3] font-semibold text-md pb-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                cum sunt, officiis perspiciatis.
+              </p>
+            </div>
+            <!-- BOX 2 -->
+            <div class="bg-adopt-light w-full h-auto p-5 rounded-3xl">
+              <h4 class="text-white text-xl font-bold">14/10/22</h4>
+              <h5 class="text-white text-lg pb-1 pt-4 font-bold">Location:</h5>
+              <p class="text-[#C5DEF3] font-semibold text-md pb-3">
+                New Pier, Town
+              </p>
+
+              <h5 class="text-white text-lg pb-1 pt-2 font-bold">Result:</h5>
+              <p class="text-[#C5DEF3] font-semibold text-md pb-3">Average</p>
+
+              <h5 class="text-white text-lg pb-1 pt-2 font-bold">Reason:</h5>
+              <p class="text-[#C5DEF3] font-semibold text-md pb-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                cum sunt, officiis perspiciatis.
+              </p>
+            </div>
+            <!-- BOX 3 -->
+            <div class="bg-adopt-light w-full h-auto p-5 rounded-3xl">
+              <h4 class="text-white text-xl font-bold">20/12/22</h4>
+              <h5 class="text-white text-lg pb-1 pt-4 font-bold">Location:</h5>
+              <p class="text-[#C5DEF3] font-semibold text-md pb-3">
+                Shelly Beach, Margate
+              </p>
+
+              <h5 class="text-white text-lg pb-1 pt-2 font-bold">Result:</h5>
+              <p class="text-[#C5DEF3] font-semibold text-md pb-3">Very Good</p>
+
+              <h5 class="text-white text-lg pb-1 pt-2 font-bold">Reason:</h5>
+              <p class="text-[#C5DEF3] font-semibold text-md pb-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                cum sunt, officiis perspiciatis.
+              </p>
             </div>
           </div>
         </div>
@@ -290,7 +384,7 @@
             >.
           </p>
         </div>
-        <div class="grid sm:grid-cols-3 gap-12 px-6 pt-20 py-10">
+        <div class="grid lg:grid-cols-3 gap-12 px-6 pt-20 py-10">
           <button
             id="credit-card-btn"
             class="w-full h-full px-4 py-8 bg-adopt text-white rounded-lg transition-all duration-200 hover:-translate-y-1 hover:shadow-xl active:-translate-y-1 active:shadow-xl focus:shadow-lg z-50"

@@ -22,6 +22,9 @@ module.exports = {
         tufbag:
           "linear-gradient(to right bottom, rgba(0,0,0, 0.3), rgba(0,0,0, 0.3)), url('./public/images/tufbag.png')",
       },
+      boxShadow: {
+        "5xl": "0 0 20px 1px #C5DEF3",
+      },
     },
     plugins: [],
   },

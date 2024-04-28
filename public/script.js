@@ -73,3 +73,5 @@ waterSamplingExit.addEventListener("click", function () {
     waterSampling.classList.add("hidden");
   }
 });
+
+document.getElementById("year").innerHTML = new Date().getFullYear();

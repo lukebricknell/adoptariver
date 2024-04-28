@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Adopt a River is a is a passionate non-profit dedicated to making a difference in our waterways. We work together with local communities, for the environment."
+    />
+    <meta
+      name="og:title"
+      content="Adopt a River | Changing communities and the environment"
+    />
+    <meta
+      name="og:description"
+      content="Adopt a River is a is a passionate non-profit dedicated to making a difference in our waterways. We work together with local communities, for the environment."
+    />
+    <meta
+      name="og:img"
+      content="https://lukebricknell.github.io/adoptariver/public/images/favicon.png"
+    />
+    <link href="output.css" rel="stylesheet" />
+    <link rel="icon" href="images/favicon.png" sizes="32x32" />
+    <title>Adopt a River | Changing communities and the environment</title>
+  </head>
+  <body>
+    <div
+      class="h-screen text-center relative flex flex-col justify-center items-center"
+    >
+      <div class="">
+        <img class="h-24 xl:h-32 mx-auto pb-6" src="images/logo.png" />
+        <h1 class="font-semibold text-3xl text-gray-500 text-center">
+          Website Under Maintenance
+        </h1>
+      </div>
+      <div class="">
+        <h3 class="text-gray-500">
+          For more info/inquiries
+          <a
+            href="mailto:info@adoptariversa.org"
+            class="underline text-gray-600 hover:text-orange focus:text-orange transition-all"
+            >click here</a
+          >
+          to contact us.
+        </h3>
+        <h3 class="text-gray-500">
+          ... or
+          <button
+            onclick=""
+            id="password-button"
+            class="underline text-gray-600 hover:text-orange focus:text-orange transition-all"
+          >
+            click here
+          </button>
+          to enter the password.
+        </h3>
+      </div>
+      <div id="password" class="z-50 hidden">
+        <form action="index-2.html" method="get" class="form-example">
+          <div class="flex justify-center items-center gap-2 mt-10">
+            <input
+              type="text"
+              placeholder="Password"
+              id="password-2"
+              class="px-10 py-3 ring-adopt ring-2 text-adopt rounded-full placeholder:text-adopt"
+            />
+            <input
+              type="submit"
+              class="bg-adopt text-white px-[15px] py-2 rounded-full"
+              id="submit"
+              value=">"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script>
+    const password = document.getElementById("password-2").value;
+    document
+      .getElementById("password-button")
+      .addEventListener("click", function () {
+        password.classList.remove("hidden");
+        console.log("hello");
+      });
+
+    const newPassword = "AdoptaRiver"
+      .getElementById("submit")
+      .addEventListener(SubmitEvent, function () {
+        console.log(password);
+        if (newPassword == password) {
+          window.location.href = "/index-2.html";
+        } else {
+          return false;
+        }
+      });
+  </script>
+</html>
